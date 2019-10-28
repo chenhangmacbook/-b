@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+        <script>
+            // JSON结构共有2种：
+            //     （1）对象结构； var jsonobj = {...}...
+            //     （2）数组结构； var arr = [...]...
+            var obj = {
+                "name":"xiaoming",
+                "age":21,
+                // JSON对象内部也有一个JSON对象
+                hobby: {
+                    "firs":"swimming",
+                    "second":"singing",
+                    "third":"dancing"
+                }
+            }
+
+            document.write("名字是"+obj.name+"<br/>");
+            document.write("爱好是"+obj.hobby.firs);
+        </script>
+    </head>
+    <body>
+        <h1>JSON是什么？</h1>
+        <p>JSON全称JavaScript object notation（JavaScript对象表示法）</p>
+        <p>说白了就是JavaScript用来处理数据的一种格式，这种格式非常简单易用。<br/>
+            大部分都是用来处理JavaScript和web服务器之间的数据交换，把后台web服务器的数据传递到前台 <br/>
+            然后使用JavaScript进行处理，例如:<strong>ajax</strong>
+        </p>
+    </body>
+</html>
